@@ -63,6 +63,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 .top div{
     margin-left: 21px;
@@ -77,43 +78,84 @@ img {
 .food::-webkit-scrollbar /*hidding scrollbar on opera, chrome and safari*/{
     display: none;
 }
-.food-box{
-    height: 212px;
+.item-selected div{
+    height: 190px;
 }
-.drink-box{
-    height: 202px;
-}
-.dessert-box{
-    height: 197px;
-}
-.item-box{
-    width: 172px;
 
-    background-color: #FFFFFF;
+.food-box div{
+    height: 216px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+    text-align: start;
 
-    padding: 18px 14px 13px;
+    padding: 13px 14px;
     box-sizing: border-box;
+    width: 172px;
+}
+.drink-box div{
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: start;
+
+    padding: 13px 14px;
+    box-sizing: border-box;
+    width: 172px;
+}
+.dessert-box div{
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    text-align: start;
+
+    padding: 13px 14px;
+    box-sizing: border-box;
+    width: 172px;
+}
+.item-box{
+    background-color: #FFFFFF;
     border-radius: 9px;
 
+    display: flex;
+    align-items: center;
     margin-left: 16px;  
     position: relative;  
+
+    box-sizing: border-box;
   
 }
+.item-box ion-icon{
+    display: none;
+}
+
 .item-selected{
+    background-color: #FFFFFF;
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    margin-left: 16px;  
+    position: relative;  
+
+    box-sizing: border-box;
+  
     height: 216px;
     border: 4px solid #32B72F; 
 }
 .item-selected ion-icon{
     color: #32B72F;
+    font-size: 20px;
 
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 12px;
 }
-
 .bottom{
     position: fixed;
     bottom: 0;
