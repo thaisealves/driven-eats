@@ -25,9 +25,10 @@
                     <div>
                     <img src="/images/frango.png" title="Frango Yin Yang">
                     <h3>Frango Yin Yang</h3>
-                    <h5>Um pouco de batata, um pouco de salada</h5>
+                    <h5>Um pouco de batata, </br> um pouco de salada</h5>
                     <h6>R$ 14,90</h6>
                     <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
                
                 <button onclick="foodSelected(this)"  class="item-box food-box">
@@ -37,6 +38,7 @@
                     <h5>Um pouco de batata, um pouco de salada</h5>
                     <h6>R$ 14,90</h6>
                     <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
 
                 <button onclick="foodSelected(this)"  class="item-box food-box">
@@ -46,6 +48,7 @@
                     <h5>Um pouco de batata, um pouco de salada</h5>
                     <h6>R$ 14,90</h6>
                     <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
 
                 <button onclick="foodSelected(this)"  class="item-box food-box">
@@ -55,6 +58,7 @@
                     <h5>Um pouco de batata, um pouco de salada</h5>
                     <h6>R$ 14,90</h6>
                     <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
 
                 <button onclick="foodSelected(this)"  class="item-box food-box">
@@ -64,14 +68,15 @@
                     <h5>Um pouco de batata, um pouco de salada</h5>
                     <h6>R$ 14,90</h6>
                     <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
                 </button>
 
 
             </div>
 
             <h2>Agora, sua bebida</h2>
-            <div class="food">                
-                <button onclick="foodSelected(this)" class="item-box drink-box">
+            <div class="drink">                
+                <button onclick="drinkSelected(this)" class="item-box drink-box">
                     <div>
                     <img src="/images/coca.png" title="Frango Yin Yang">
                     <h3>Coquinha gelada</h3>
@@ -81,7 +86,7 @@
                     </div>
                 </button>
 
-                <button onclick="foodSelected(this)" class="item-box drink-box">
+                <button onclick="drinkSelected(this)" class="item-box drink-box">
                     <div>
                     <img src="/images/coca.png" title="Frango Yin Yang">
                     <h3>Coquinha gelada</h3>
@@ -91,7 +96,7 @@
                     </div>
                 </button>
 
-                <button onclick="foodSelected(this)" class="item-box drink-box">
+                <button onclick="drinkSelected(this)" class="item-box drink-box">
                     <div>
                     <img src="/images/coca.png" title="Frango Yin Yang">
                     <h3>Coquinha gelada</h3>
@@ -101,7 +106,7 @@
                     </div>
                 </button>
 
-                <button onclick="foodSelected(this)" class="item-box drink-box">
+                <button onclick="drinkSelected(this)" class="item-box drink-box">
                     <div>
                     <img src="/images/coca.png" title="Frango Yin Yang">
                     <h3>Coquinha gelada</h3>
@@ -114,8 +119,8 @@
             </div>
 
             <h2>Por fim, sua sobremesa</h2>
-            <div class="food">                
-                <button onclick="foodSelected(this)" class="item-box dessert-box">
+            <div class="dessert">                
+                <button onclick="dessertSelected(this)" class="item-box dessert-box">
                     <div>
                     <img src="/images/pudim.png" title="Frango Yin Yang">
                     <h3>Pudim</h3>
@@ -125,7 +130,7 @@
                     </div>
                 </button>
 
-                <button onclick="foodSelected(this)" class="item-box dessert-box">
+                <button onclick="dessertSelected(this)" class="item-box dessert-box">
                     <div>
                     <img src="/images/pudim.png" title="Frango Yin Yang">
                     <h3>Pudim</h3>
@@ -135,7 +140,7 @@
                     </div>
                 </button>
 
-                <button onclick="foodSelected(this)" class="item-box dessert-box">
+                <button onclick="dessertSelected(this)" class="item-box dessert-box">
                     <div>
                     <img src="/images/pudim.png" title="Frango Yin Yang">
                     <h3>Pudim</h3>
@@ -145,7 +150,7 @@
                     </div>
                 </button>
 
-                <button onclick="foodSelected(this)" class="item-box dessert-box">
+                <button onclick="dessertSelected(this)" class="item-box dessert-box">
                     <div>
                     <img src="/images/pudim.png" title="Frango Yin Yang">
                     <h3>Pudim</h3>
@@ -161,7 +166,7 @@
    
         <div class="bottom">
             <div>
-            <button>Selecione os 3 itens </br>para fechar o pedido</button>
+            <button onclick="finalCheck(this)">Selecione os 3 itens </br>para fechar o pedido</button>
             </div>
         </div>
     </div>
