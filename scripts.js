@@ -1,26 +1,21 @@
-let food;
-let drink;
-let dessert;
+
+let allItems = 0;
 
 function foodSelected(element){
-
-    food = element.innerText;
-
-    const boxSelected = document.querySelector(".food").querySelector(".item-selected");
-    if (boxSelected!==null){
+    let boxSelected = document.querySelector(".food").querySelector(".item-selected");
+    if (boxSelected !== null){
         boxSelected.classList.remove("item-selected")
         boxSelected.classList.add("item-box")
     }
 
     element.classList.remove("item-box")
     element.classList.add("item-selected")
+    allItems = allItems + 1;   
+    countAll();
 }
 
 function drinkSelected(element){
-
-    drink = element.innerText;
-
-    const boxSelected = document.querySelector(".drink").querySelector(".item-selected");
+    let boxSelected = document.querySelector(".drink").querySelector(".item-selected");
     if (boxSelected!==null){
         boxSelected.classList.remove("item-selected")
         boxSelected.classList.add("item-box")
@@ -28,11 +23,12 @@ function drinkSelected(element){
 
     element.classList.remove("item-box")
     element.classList.add("item-selected")
+    allItems = allItems + 1;  
+    countAll();
 }
 
 function dessertSelected(element){
-     dessert = element.innerText;
-    const boxSelected = document.querySelector(".dessert").querySelector(".item-selected");
+    let boxSelected = document.querySelector(".dessert").querySelector(".item-selected");
     if (boxSelected!==null){
         boxSelected.classList.remove("item-selected")
         boxSelected.classList.add("item-box")
@@ -40,15 +36,22 @@ function dessertSelected(element){
 
     element.classList.remove("item-box")
     element.classList.add("item-selected")
+    allItems = allItems + 1;;  
+    countAll();
 }
 
-function finalCheck(element){
+function countAll(){
+    let button = document.querySelector(".bottom").querySelector("button");
+
+    if ( allItems < 3){
+        button.disabled = true;
+    }
+
+    else {
+        button.disabled = false;
+        button.classList.add("checking")
+        button.innerHTML = "Fechar pedido"
+    }
+
     
-      const boxSelected =  document.querySelector(".bottom").querySelector("button");
-
-      element.classList.add("checking");
-    
-
-
-
 }
