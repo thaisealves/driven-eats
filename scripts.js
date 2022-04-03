@@ -10,7 +10,6 @@ function foodSelected(element){
 
     element.classList.remove("item-box")
     element.classList.add("item-selected")
-    allItems = allItems + 1;   
     countAll();
 }
 
@@ -23,7 +22,6 @@ function drinkSelected(element){
 
     element.classList.remove("item-box")
     element.classList.add("item-selected")
-    allItems = allItems + 1;  
     countAll();
 }
 
@@ -36,14 +34,14 @@ function dessertSelected(element){
 
     element.classList.remove("item-box")
     element.classList.add("item-selected")
-    allItems = allItems + 1;;  
     countAll();
 }
 
 function countAll(){
     let button = document.querySelector(".bottom").querySelector("button");
-
-    if ( allItems < 3){
+    let counting = document.querySelectorAll(".item-selected").length;
+    // pegar aqui se tem item selecionado = 1, fazer um ifzinho, pegando se querySelector =! null, vai somar, dai se no final tiver >= 3 vai contabilizar!
+    if ( counting < 3){
         button.disabled = true;
     }
 
@@ -52,6 +50,10 @@ function countAll(){
         button.classList.add("checking")
         button.innerHTML = "Fechar pedido"
     }
+}
 
+function finalCheck(){
+    let shown = document.querySelector(".confirm")
+    shown.classList.remove("hidden")
     
 }
