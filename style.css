@@ -40,6 +40,7 @@ h6{
 img {
     width: 144px;
     height: 87px;
+    object-fit: cover;
 }
 .container{
   max-width: 614px;
