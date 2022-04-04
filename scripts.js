@@ -90,8 +90,7 @@ function finalCheck(){
     
     let name = prompt("Qual seu nome?")
     let adress = prompt("E o endereço?")
-    let textMessage = `Olá, gostaria de fazer o pedido: \n- Prato: ${nameFood}\n- Bebida: ${nameDrink}\n- Sobremesa: ${nameDessert}\nTotal: R$ ${fullPrice.toFixed(2)}
-    Nome: ${name}\nEndereço: ${adress}`
+    let textMessage = `Olá, gostaria de fazer o pedido: \n- Prato: ${nameFood}\n- Bebida: ${nameDrink}\n- Sobremesa: ${nameDessert}\nTotal: R$ ${fullPrice.toFixed(2)}\n\nNome: ${name}\nEndereço: ${adress}`
        let params = encodeURIComponent(textMessage);
     
         url = `https://wa.me/${restaurantNumber}?text=${params}`;
