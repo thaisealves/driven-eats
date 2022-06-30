@@ -1,7 +1,7 @@
 
 let allItems = 0;
 let url; 
-let restaurantNumber = 5524981160258;
+let restaurantNumber = 5599999999;
 let nameFood, nameDrink, nameDessert;
 
 function foodSelected(element){
@@ -43,7 +43,9 @@ function dessertSelected(element){
 function countAll(){
     let button = document.querySelector(".bottom").querySelector("button");
     let counting = document.querySelectorAll(".item-selected").length;
-    // pegar aqui se tem item selecionado = 1, fazer um ifzinho, pegando se querySelector =! null, vai somar, dai se no final tiver >= 3 vai contabilizar!
+
+   
+
     if ( counting < document.querySelectorAll(".row").length){
         button.disabled = true;
     }
@@ -67,7 +69,7 @@ function finalCheck(){
      nameDrink = document.querySelector(".drink").querySelector(".item-selected").querySelector("h3").innerHTML;
      nameDessert = document.querySelector(".dessert").querySelector(".item-selected").querySelector("h3").innerHTML;
     
-    //space to tranform the price in a NUMVER
+    //space to tranform the price in a NUMBER
     let priceFood = Number(foodSelected.replace(",", ".").replace("R$", ""));
     let priceDrink = Number(drinkSelected.replace(",", ".").replace("R$", ""));
     let priceDessert = Number(dessertSelected.replace(",", ".").replace("R$", ""));
